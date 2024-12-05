@@ -12,9 +12,6 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git credentialsId: 'github', 
-        url: 'https://github.com/Aryog/spring-boot-app-cicd.git', 
-        branch: 'main'      
 	}
     }
     stage('Build and Test') {
